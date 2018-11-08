@@ -168,33 +168,28 @@
 <footer id="b-foot">
     <div class="container">
         <div class="row b-content">
-            <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <dt>权益</dt>
-                <dd>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">CC BY-NC 4.0</a></dd>
-                <dd>版权所有：© 2014-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>
-                @if(!empty(config('bjyblog.icp')))
-                    <dd>网站备案：{{ config('bjyblog.icp') }}</dd>
-                @endif
-                @if(!empty(config('bjyblog.admin_email')))
-                    <dd>联系邮箱：<a href="mailto:{!! config('bjyblog.admin_email') !!}">{!! config('bjyblog.admin_email') !!}</a></dd>
-                @endif
-            </dl>
+            {{--<dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">--}}
+                {{--<dt>权益</dt>--}}
+                {{--<dd>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">CC BY-NC 4.0</a></dd>--}}
+                {{--<dd>版权所有：© 2014-{{ date('Y') }} {{ parse_url(config('app.url'))['host'] }}</dd>--}}
+                {{--@if(!empty(config('bjyblog.icp')))--}}
+                    {{--<dd>网站备案：{{ config('bjyblog.icp') }}</dd>--}}
+                {{--@endif--}}
+                {{--@if(!empty(config('bjyblog.admin_email')))--}}
+                    {{--<dd>联系邮箱：<a href="mailto:{!! config('bjyblog.admin_email') !!}">{!! config('bjyblog.admin_email') !!}</a></dd>--}}
+                {{--@endif--}}
+            {{--</dl>--}}
 
             <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <dt>架构</dt>
-                <dd>项目名称：<a rel="nofollow" href="https://github.com/baijunyao/laravel-bjyblog" target="_blank">laravel-bjyblog</a></dd>
-                <dd>版本分支：{{ config('bjyblog.version') }}-{{ config('bjyblog.branch') }}</dd>
-                <dd>项目作者：<a href="https://baijunyao.com">白俊遥</a></dd>
-                <dd>主题名称：<a rel="nofollow" href="https://github.com/baijunyao/blog-theme-blueberry">blog-theme-blueberry</a></dd>
-                <dd>主题作者：<a href="https://baijunyao.com">白俊遥</a></dd>
+                <dt>源码介绍</dt>
+                <dd>博客源码：<a rel="nofollow" href="https://github.com/baijunyao/laravel-bjyblog" target="_blank">laravel-bjyblog</a></dd>
+                <dd>源码作者：<a href="https://baijunyao.com">白俊遥</a></dd>
             </dl>
 
             <dl class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <dt>统计</dt>
-                <dd>文章总数：{{ $articleCount }}</dd>
-                <dd>评论总数：{{ $commentCount }}</dd>
-                <dd>登录用户：{{ $oauthUserCount }}</dd>
-                <dd>随言碎语：{{ $chatCount }}</dd>
+                <dt>博客</dt>
+                <dd>所有者：<a rel="nofollow" href="https://github.com/zhang-fy" target="_blank">zhang-fy</a> </dd>
+                <dd>联系邮箱：zfyzm1224@163.com</dd>
             </dl>
         </div>
     </div>

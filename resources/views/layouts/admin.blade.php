@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{ mix('css/admin.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="longlongago.png">
     @yield('css')
 </head>
 <body class="nav-md">
